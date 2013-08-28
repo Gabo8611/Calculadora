@@ -1,0 +1,13 @@
+{
+  "name": "Calculadora",
+  "description": "Calculadora",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/icon-128.png"
+  },
+  "developer": {
+    "name": "Mozilla México",
+    "url": "/"
+  },
+  "default_locale": "es"
+}
