@@ -10,7 +10,7 @@ $(function(){
 		if (val=="mrc"&&rmrc==false){$("#txt_pantalla").val(mrc);rmrc=true; a = mrc;}
 		else if(val=="mrc"&&rmrc==true){$("#txt_pantalla").val(mrc);rmrc=true;mrc=0;a=null;};
 		
-		if (typeof a == 'undefined'){
+		if (typeof a == 'undefined' || a == null){
 			
 			aux = $("#txt_pantalla").val();
 			aux3=aux;
@@ -73,6 +73,7 @@ $(function(){
 						c="sus";
 						break;
 			case "mult":
+						if($("#txt_pantalla").val()=='')aux3=0;
 						a = aux3;
 						oper=true;
 						c="mult";
